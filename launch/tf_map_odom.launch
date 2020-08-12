@@ -1,0 +1,5 @@
+<launch>
+
+	<node name="tf_map_odom" pkg="tf" type="static_transform_publisher" args="0 0 0 0 0 0 map t265_odom_frame 100" />
+
+</launch>

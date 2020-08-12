@@ -169,7 +169,8 @@ int main(int argc, char **argv)
             // fill the message
             msg.header.seq = frame_id++;
             msg.header.stamp = ros::Time::now();
-            msg.header.frame_id = "t265_odom_frame";
+            // msg.header.frame_id = "t265_odom_frame";
+            msg.header.frame_id = "map";
             msg.info.map_load_time = ros::Time::now();
             msg.info.resolution = occGrid->mapMetaData.resolution;
             msg.info.width = occGrid->mapMetaData.width;       
